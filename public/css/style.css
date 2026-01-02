@@ -1,0 +1,169 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+  flex: 1;
+}
+/* navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.navbar .nav-link {
+  padding: 0;
+}
+
+.fa-compass{
+    color: #fe4271;
+    font-size: 2rem ;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+/* footer  */
+.f-info{
+  width: 100%;
+}
+.f-info-links a{
+ text-decoration: none;
+ color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+   }
+
+.f-info-links,
+.f-info-socials, 
+   .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+.f-info-socials i{
+ margin-right: 2rem;
+ font-size: 1.2rem;
+
+}
+
+  .f-info{
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: center;
+  } 
+
+  /* cards */
+  .listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+  }
+  .card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+  .card-body{
+    padding: 0;
+  }
+  .card-text p{
+ font-weight: 400 !important;
+}
+.listing-link{
+text-decoration: none;
+}
+ /* card Effect  */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+.add-btn{
+  background-color: #fe424d !important ;
+  border:none !important ;
+}
+.edit-btn{
+  background-color: #fe424d !important ;
+  border: none !important;
+}
+
+/* show page  */
+.show-img{
+  height: 40vh;
+}
+
+.btns{
+  display: flex;
+  /* height: 5vh !important; */
+}
+.btns a{
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+ 
+  color: white;
+}
+
+
+ /* map */
+
+.map-container {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+#map {
+  width: 80vh;
+  height: 400px;
+  padding: 100px;
+  border-radius: 12px;
+}
+
+/* Tablets */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 992px) {
+  #map {
+    height: 300px;
+  }
+  .f-info {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  #map {
+    height: 250px;
+  }
+  .f-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .f-info-links a {
+    margin: 0 0.5rem;
+  }
+}
+
+
+
