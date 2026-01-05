@@ -1,58 +1,3 @@
-<!-- <style>
-  .btn-search{
-    background-color:#fe424d ;
-    color: white;
-    border-radius: 25px;
-    padding: 0 1rem 0 1rem;
-  }
-  .btn-search:hover{
-    background-color:#fe4271 ;
-    color: white;
-  }
-  .btn-search i{
-    display: inline;
-    margin-right: 0.5rem;
-  }
-  .search-input{
-    border-radius: 25px;
-    padding: 0.5rem 3rem 0.5rem 3rem ;
-    font-size: 1rem;
-  }
-</style>
-<nav class="navbar navbar-expand-md bg-body-light  border-bottom sticky-top">
-    <div class="d-flex align-items-center">
-      <a class="navbar-brand me-2" href="/listings">
-      <i class="fa-regular fa-compass"></i> 
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
-        <span class="navbar-toggler-icon"> </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="/listings">Explore</a>
-        </div>
-<div class="navbar-nav ms-auto">
-  <form class="d-flex" role="search">
-    <input class="form-control me-2 search-input" type="search" placeholder="Search destinations">
-    <button class="btn btn-search" type="submit">
-      <i class="fa-solid fa-magnifying-glass"></i>Search</button>
-  </form>
-</div>
-
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="/listings/new"> Airbnb your home </a>
-         <% if(!currUser) {  %> 
-            <a class="nav-link " href="/signup"><b>Signin</b></a>
-            <a class="nav-link" href="/login"><b>Login</b></a>
-            <%  } %> 
-            <% if(currUser) {  %>       
-          <a class="nav-link" href="/logout">Logout</a>
-          <%  } %> 
-
-        </div>
-      </div>
-    </div>
-  </nav> -->
 
 <style>
   .btn-search{
@@ -88,7 +33,6 @@
 <nav class="navbar navbar-expand-md bg-white border-bottom sticky-top">
   <div class="container-fluid align-items-center">
 
-    <!-- LEFT: LOGO + EXPLORE -->
     <div class="d-flex align-items-center">
       <a class="navbar-brand me-2" href="/listings">
         <i class="fa-regular fa-compass"></i>
@@ -96,7 +40,6 @@
       <a class="nav-link fw-semibold ms-4" href="/listings">Explore</a>
     </div>
 
-    <!-- CENTER: BIG SEARCH (DESKTOP ONLY) -->
     <div class="d-none d-md-flex flex-grow-1 justify-content-center px-4">
       <form class="d-flex w-120" role="search" action="/listings/search" method="GET">
         <input
@@ -110,7 +53,6 @@
       </form>
     </div>
 
-    <!-- RIGHT: NAV ITEMS (DESKTOP) -->
     <div class="d-none d-md-flex align-items-center gap-4">
 
       <a class="nav-link p-0" href="/listings/new">Airbnb your home</a>
@@ -126,7 +68,6 @@
 
     </div>
 
-    <!-- MOBILE TOGGLER -->
     <button class="navbar-toggler d-md-none ms-auto"
        type="button"
       data-bs-toggle="offcanvas"
@@ -137,7 +78,6 @@
   </div>
 </nav>
 
-<!-- MOBILE OFFCANVAS MENU -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title">Browse</h5>
