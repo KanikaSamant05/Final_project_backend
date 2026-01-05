@@ -5,9 +5,9 @@ const Listing = require("../models/listing.js")
 const {isLoggedIn , isOwner, validateListing} = require("../middleware.js");
 const listingController = require("../controllers/listings.js");
 // multer is a package used to upload files or mutilmedia from laptop
-const multer = require('multer');
-const {storage} = require("../cloudConfig.js")
-const upload = multer({ storage});
+const multer = require("multer"); 
+const { storage } = require("../cloudConfig.js"); // CloudinaryStorage
+const upload = multer({ storage });    
 
 // Now we are using router.route method which helps in properly arranging the routes who have common paths without requesting for that path repeatedly even though they perform different requests.
 // like index and crete route has common path (root"/"")
