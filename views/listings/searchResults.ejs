@@ -35,8 +35,8 @@
             <p class="card-text">
               <b><%= listing.title %></b> <br>
               <%= listing.description %> <br>
-              <%= listing.country %> <br>
-              &#8377; <%= listing.price.toLocaleString("en-IN") %>/night
+               <span class="listing-country"><%= listing.country %> </span><br>
+              <span class="price"> </span>&#8377; <%= listing.price.toLocaleString("en-IN") %>/night </span>
               <i class="taxInfo"> &nbsp; +18% GST </i>
 
             </p>
