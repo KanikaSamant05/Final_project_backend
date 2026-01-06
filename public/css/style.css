@@ -26,6 +26,20 @@ body{
     color: #222222 !important;
 }
 
+.listing-location {
+    color: #060607;   /* blue */
+    font-weight: 600;
+}
+
+.listing-country {
+    color: #2438e4;   /* green */
+    font-weight: 700;
+}
+.price {
+    color: #78837e; /* Bootstrap success green */
+    font-weight: 600;
+}
+
 /* footer  */
 .f-info{
   width: 100%;
